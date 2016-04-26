@@ -61,7 +61,7 @@ from uberwriter_lib import Window
 from uberwriter_lib import helpers
 from .AboutUberwriterDialog import AboutUberwriterDialog
 from .UberwriterAdvancedExportDialog import UberwriterAdvancedExportDialog
-from .plugins.bibtex import BibTex
+#from .plugins.bibtex import BibTex
 # Some Globals
 # TODO move them somewhere for better
 # accesibility from other files
@@ -1149,7 +1149,7 @@ class UberwriterWindow(Window):
         self.gtk_settings = Gtk.Settings.get_default()
         self.load_settings(builder)
 
-        self.plugins = [BibTex(self)]
+        #self.plugins = [BibTex(self)]
 
         # self.connect_after('realize', self.color_window)
 
